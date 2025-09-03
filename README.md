@@ -29,7 +29,7 @@ The ATE framework consists of two stages:
 - Rapid deployment to new robotic platforms
 - Efficient VLA adaptation when data collection is costly or labor-intensive
 
-## 📅 Development Roadmap
+## 📅 Checklist
 
 - [ ] Release code for Diffusion Policy (DP) with ATE
 - [ ] Release code for RDT-1B with ATE on RoboTwin
