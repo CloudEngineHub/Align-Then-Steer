@@ -15,12 +15,12 @@ We introduce **Align-Then-stEer (ATE)**, a novel, data-efficient, and plug-and-p
 - **Simulation Environment**: Improves average multi-task success rate by up to **9.8%** compared to direct fine-tuning of representative VLAs
 - **Real-World**: Achieves a striking **32% success rate gain** in cross-embodiment settings
 
-## 🔧 Technical Approach
+## 🔧 Technical Implementation
 
-The ATE framework consists of two key components:
+The ATE framework consists of two stages:
 
 1. **Alignment Phase (Align)**: Uses a variational autoencoder constrained by reverse KL divergence to embed adaptation actions into modes of the pre-training action latent distribution
-2. **Steering Phase (Steer)**: Pushes the model's output distribution towards the target domain through a guidance mechanism
+2. **Adaptation Phase (Steer)**: Pushes the model's output distribution towards the target domain through a classifier guidance
 
 ## 🎯 Applications
 
@@ -29,6 +29,7 @@ The ATE framework consists of two key components:
 - Rapid deployment to new robotic platforms
 - Efficient VLA adaptation when data collection is costly or labor-intensive
 
-## 📅 Roadmap
+## 📅 Development Roadmap
 
-- [ ] 🤗 Release ATE code: Stage 1 (learning unified action latent space) and Stage 2 (steering the adaptation)
+- [ ] Release code for Diffusion Policy (DP) with ATE
+- [ ] Release code for RDT-1B with ATE on RoboTwin
