@@ -1,5 +1,20 @@
 # Align-Then-stEer: Adapting the Vision-Language Action Models through Unified Latent Guidance
 
+<p align="left">
+  <a href="https://align-then-steer.github.io/">
+    <img
+      src="https://img.shields.io/badge/Align--Then--stEer-Website-87CEEB?logo=robotframework&logoColor=white"
+      alt="ATE Website"
+    />
+  </a>
+  <a href="https://arxiv.org/abs/2509.02055">
+    <img
+      src="https://img.shields.io/badge/Align--Then--stEer-Paper-red?logo=arxiv&logoColor=red"
+      alt="ATE Paper on arXiv"
+    />
+  </a>
+</p>
+
 We introduce **Align-Then-stEer (ATE)**, a novel, data-efficient, and plug-and-play adaptation framework that addresses the critical challenge of adapting Vision-Language-Action (VLA) models to downstream tasks. When the robot's embodiment or the task itself differs from the pre-training data, significant action distribution mismatches require extensive data and computational resources for effective fine-tuning. Our method aligns disparate action spaces by constructing a unified latent space and steers the generation process towards the target domain.
 
 ## ✨ Key Features
