@@ -1,0 +1,16 @@
+stage1_dataset_dir: "/way/to/your/stage1_dataset"
+stage2_dataset_dir: "/way/to/your/stage2_dataset"
+# Resume training from a checkpoint
+enable_resume: False
+pretrained_model_dir: "/way/to/your/checkpoint_dir"
+
+auto_stage2: False
+wandb_flag: False
+eval_stage: "Stage1"
+
+eval_step: 10000
+eval_target: "Last"
+learning_rate: 1e-4
+latent_dim: 512
+stage1_num_epoch: 1
+stage2_num_epoch: 2

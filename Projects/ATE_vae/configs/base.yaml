@@ -1,0 +1,16 @@
+in_channels: 128
+latent_dim: 512
+batch_size: 64
+SA_step: 1
+
+min_lr: 1e-6
+weight_decay: 1e-4
+# wandb_flag means whether to use Online wandb to log the training process.
+wandb_flag: True
+
+# save_every means saving the model every X epochs.
+save_every_x_epoch: 1000
+# max_save means There will be at most X checkpoints saved.
+max_save: 10
+# EvalPerEpoch means evaluating the model every X epochs.
+eval_per_x_epoch: 5

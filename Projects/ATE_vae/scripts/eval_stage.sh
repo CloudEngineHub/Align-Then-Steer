@@ -1,0 +1,1 @@
+python eval.py --config_file ./configs/eval_info_stage1.yaml

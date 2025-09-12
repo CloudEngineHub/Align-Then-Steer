@@ -1,0 +1,1 @@
+python train.py --config_file ./configs/info_stage1.yaml
