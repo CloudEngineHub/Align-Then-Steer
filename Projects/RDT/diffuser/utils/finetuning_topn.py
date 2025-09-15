@@ -140,7 +140,7 @@ class Finetuner(object):
     ):
         super().__init__()
         wandb_id_file_path = pathlib.Path(
-            f"/checkpoint/chenjia/infodec_check/wandb/wandb_txt/MT50FT_topn_{task}_{seed}_{bc_outer_weight}_{reward_weight}_{init_episode}_{p_step}_wandb_runid.txt")
+            f"/your/MT50FT_topn_{task}_{seed}_{bc_outer_weight}_{reward_weight}_{init_episode}_{p_step}_wandb_runid.txt")
         wandb_config = init_or_resume_wandb_run(wandb_id_file_path, project_name="MT50_FT",
                                                 run_name=f'{task}_topn_seed{seed}_bc{bc_outer_weight}_rew{reward_weight}_init{init_episode}',
                                                 dir='/checkpoint/chenjia/infodec_check/wandb', write_flag=save_model)

@@ -70,7 +70,7 @@ class Trainer(object):
 
         wandb.init(project='MT50_100k',
                    name=f'{dataset.env_name}_pre_{dataset.datanum}',
-                   dir='/home/fanchenyou/wandb')
+                   dir='/home/your/wandb')
         wandb.define_metric("custom_step")
 
         self.model = diffusion_model

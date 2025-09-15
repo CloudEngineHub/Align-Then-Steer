@@ -111,6 +111,8 @@ model:
 - **s_length**: In this stage, you do not need to explicitly configure the VAE’s s_length. However, you must ensure that s_length is consistent with the Action chunk length you expect for RDT.
 
 2. **Start Training**:
-```
+```bash
+cd Project/RDT
+conda activate 'your RDT env'
 ./finetune.sh 
 ```

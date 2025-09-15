@@ -103,7 +103,7 @@ class Finetuner(object):
         super().__init__()
         wandb.init(project='MT50_100k',
                    name=f'{task}_seed{seed}_p{p_step}_init{init_episode}',
-                   dir='/home/fanchenyou/wandb')
+                   dir='/home/your/wandb')
         wandb.config.update(
             dict(task=task, seed=seed, bc_outer_weight=bc_outer_weight, reward_weight=reward_weight,
                  init_episode=init_episode, finetune_steps=finetune_steps,

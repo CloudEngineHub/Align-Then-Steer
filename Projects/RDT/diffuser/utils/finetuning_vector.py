@@ -142,7 +142,7 @@ class Finetuner(object):
             f"/checkpoint/chenjia/infodec_check/wandb/wandb_txt/MT50FT_{task}_{seed}_{bc_outer_weight}_{reward_weight}_{init_episode}_{p_step}_wandb_runid.txt")
         wandb_config = init_or_resume_wandb_run(wandb_id_file_path, project_name="MT50_FT",
                                                 run_name=f'{task}_seed{seed}_bc{bc_outer_weight}_rew{reward_weight}_init{init_episode}',
-                                                dir='/checkpoint/chenjia/infodec_check/wandb', write_flag=save_model)
+                                                dir='/your/wandb', write_flag=save_model)
         # wandb.init(wandb_config)
         wandb.config.update(
             dict(task=task, seed=seed, bc_outer_weight=bc_outer_weight, reward_weight=reward_weight, init_episode=init_episode,
