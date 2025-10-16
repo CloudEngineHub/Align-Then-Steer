@@ -46,8 +46,8 @@ The ATE framework consists of two stages:
 
 ## 📅 Checklist
 
-- [ ] Release code for Diffusion Policy (DP) with ATE
-- [ ] Release code for RDT-1B with ATE on RoboTwin
+- [x] Release code for Diffusion Policy (DP) with ATE
+- [x] Release code for RDT-1B with ATE on RoboTwin
 
 ## 🔥 Training VAE on Your Own Dataset
 1. **Install**:
@@ -114,3 +114,11 @@ model:
 ```
 ./finetune.sh 
 ```
+
+## 🔥 Fine-Tuning DP with ATE on Your Own Dataset
+The Diffusion Policy fine-tuning code in this project is adapted from the DP implementation in https://github.com/robotwin-Platform/RoboTwin.
+
+1. **Prepare your yaml file**:
+Follow the RDT-ATE training procedure to train the corresponding VAE model. Then, configure the `pretrained_path` in the `vae_config` section of the provided YAML files (i.e., `diffusion_policy/config/robot_dp_14_w_ate.yaml` or `diffusion_policy/config/robot_dp_16_w_ate.yaml`).
+
+2. **Start Training**: Refer to the documentation at https://robotwin-platform.github.io/doc/usage/DP.html for training the Diffusion Policy.
